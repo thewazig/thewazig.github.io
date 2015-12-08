@@ -1,0 +1,84 @@
+//Header
+
+@keyframes headerDown
+    0%
+        +opacity(0)
+    50%
+        +transform(translate(-50%, -40%))
+    100%
+        +transform(translate(-50%, -50%))
+        +opacity(1)
+        visibility: visible
+        
+@keyframes fadeIcons
+    0%
+        +transform(scale(0))
+    50%
+        +transform(scale(1.5))
+    100%
+        +transform(scale(1))
+        
+@keyframes fadeContact
+    from
+        +opacity(0)
+    to
+        +opacity(1)
+        visibility: visible
+        
+//About
+
+
+//+animation(servicesDown 1.2s ease-in-out 0.5s forwards)
+        
+@keyframes servicesDown
+    0%
+        +opacity(0)
+    50%
+        +transform(translate(-50%, -40%))
+    100%
+        +transform(translate(-50%, -50%))
+        visibility: visible
+        +opacity(1)
+//+animation(imageServices 1.2s ease-in-out 1.2s forwards)
+@keyframes imageServices
+    0%
+        +transform(scale(0))
+    30%
+        +transform(scale(1))
+        visibility: visible
+    65%
+        +transform(scale(0.6))
+    100%
+        +transform(scale(1))
+        visibility: visible
+        
+//How
+
+@keyframes howLeft
+    from
+        +opacity(0)
+        +transform(translate(-100px))
+    to
+        +opacity(1)
+        visibility: visible
+        +transform(translate(-40px))
+            
+@keyframes howRight
+    from
+        +opacity(0)
+        +transform(translate(+110px))
+    to
+        +opacity(1)
+        visibility: visible
+        +transform(translate(+50px))
+
+@keyframes elipse
+    0%
+        +opacity(0)
+        +transform(scale(0))
+    50%
+        +transform(scale(1.2))
+    100%
+        +transform(scale(1))
+        +opacity(1)
+        visibility: visible

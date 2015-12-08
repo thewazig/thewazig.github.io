@@ -1,0 +1,66 @@
+#how
+    position: relative
+    height: $howHeight
+    .title
+        text-align: center
+        padding: $howTitlePadding
+        .titleDownLine
+            width: 6em
+            height: 0.05em
+            background: $eithC
+            margin: -0.1em auto
+    #midLine
+        position: absolute
+        top: $howMidlineTop
+        left: $howMidlineLeft
+        +transform($howMidLineTranslate)
+        width: $howMidlineWidth
+        height: $howMidlineHeight
+        background: black
+    .elipse
+        visibility: hidden
+        position: absolute
+        top: $howElipseTop
+        +border-radius(50%)
+        width: $howElipseWidthHeight
+        height: $howElipseWidthHeight
+        background: white
+        border: 0.4em solid $eithC
+        
+    article
+        position: absolute
+        width: $howArticleWidth
+        max-width: $howArticleMaxWidth
+        h2
+            margin-bottom: $howArticleH2MarginBottom
+        p
+            text-indent: $howArticlePTextIndent
+        
+    .left
+        visibility: hidden
+        //+animation(howLeft 1.2s ease-in-out 0.5s forwards)
+        right: $howLeftRight
+        +transform($howLeftTranslate)
+        text-align: right
+        .elipse
+            right: $howLeftElipseRight
+    .right
+        visibility: hidden
+        //+animation(howRight 1.2s ease-in-out 0.5s forwards)
+        left: $howRightLeft
+        +transform($howRightTranslate)
+        .elipse
+            left: $howRightElipseLeft
+        
+    .briefing
+        top: $briefingTop
+    .planning
+        top: $planningTop
+    .formalizing
+        top: $formalizingTop
+    .creating
+        top: $creatingTop
+    .developing
+        top: $developingTop
+    .finishing
+        top: $finishingTop

@@ -1,0 +1,82 @@
+#aboutMe
+    overflow: hidden
+    #aboutWrapper
+        display: table
+        .photo
+            float: right
+            width: $aboutPhotoWidth
+            padding: $aboutPhotoPadding
+            text-align: center
+            
+        article.about
+            float: left
+            width: $aboutArticleWidth
+            padding: $aboutArticlePadding
+            h2
+                text-align: center
+                padding: $aboutArticleH2Padding
+            p
+                text:
+                    align: justify
+                    indent: $aboutArticlePTextIndent
+                padding: 0.5em 0
+
+    #servicesWrapper
+        position: relative
+        display: table
+        width: $aboutServicesWidth
+        height: $aboutServicesHeight
+        margin: $aboutServicesMargin
+        .articles
+            visibility: hidden
+            width: $aboutServicesArticlesWidth
+            position: absolute
+            top: $aboutServicesArticlesTop
+            left: $aboutServicesArticlesLeft
+            +transform($aboutServicesArticlesTransform)
+            article
+                float: left
+                width: $aboutServicesArticleWidth
+                padding: $aboutServicesArticlePadding
+                h2
+                    //margin-top: $aboutServicesArticleH2MarginTop
+                p
+                    text-indent: $aboutServicesArticlePTextIndent
+                    
+            .design, .developement, .social, .more
+                .servImg
+                    visibility: hidden
+                    width: 6.5em
+                    height: 5.5em
+                    float: left
+                    margin-right: 1.5em
+                    margin-top: 1em
+                    background:
+                        image: url('../img/icons/spriteIcons.png')
+                        repeat: no-repeat
+                        size: cover
+                .servArticle
+                    //background: grey
+                    width: 55em
+                    max-width: 55em
+                    float: left
+            .design
+                .servImg
+                    background:
+                        position: -88.5em center
+                        
+            .developement
+                .servImg
+                    background:
+                        position: -82.5em center
+                        
+            .social
+                .servImg
+                    background:
+                        position: -101em center
+                
+            .more
+                .servImg
+                    background:
+                        position: -94.8em center
+            
