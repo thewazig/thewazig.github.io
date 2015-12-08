@@ -55,9 +55,9 @@ $(document).ready(function () {
     $(function(){
         $(window).on('scroll', function () {
             var ScrollTop = $(this).scrollTop(),
-                wHeight = 600;
+                wHeight = $(window).height() / 1.25;
             
-            if(ScrollTop > $('#servicesWrapper').offset().top - 400){
+            if(ScrollTop > $('#servicesWrapper').offset().top - wHeight){
                 $('.articles').css({
                     'animation': 'servicesDown 1.2s ease-in-out forwards'
                 });
@@ -71,7 +71,7 @@ $(document).ready(function () {
                 });
             }
             
-            if(ScrollTop > $('.briefing').offset().top - wHeight){
+            if(ScrollTop > $('.briefing').offset().top - wHeight - 50){
                 $('.briefing').css({
                     'animation': 'howLeft 1.1s ease-in-out forwards'
                 });
@@ -79,7 +79,7 @@ $(document).ready(function () {
                     'animation' : 'elipse 0.8s ease-in-out 0.8s forwards'
                 });
             }
-            if(ScrollTop > $('.planning').offset().top - wHeight){
+            if(ScrollTop > $('.planning').offset().top - wHeight - 50){
                 $('.planning').css({
                     'animation': 'howRight 1.1s ease-in-out forwards'
                 });
@@ -87,7 +87,7 @@ $(document).ready(function () {
                     'animation' : 'elipse 0.8s ease-in-out 0.8s forwards'
                 });
             }
-            if(ScrollTop > $('.formalizing').offset().top - wHeight){
+            if(ScrollTop > $('.formalizing').offset().top - wHeight - 50){
                 $('.formalizing').css({
                     'animation': 'howLeft 1.1s ease-in-out forwards'
                 });
@@ -95,7 +95,7 @@ $(document).ready(function () {
                     'animation' : 'elipse 0.8s ease-in-out 0.8s forwards'
                 });
             }
-            if(ScrollTop > $('.creating').offset().top - wHeight){
+            if(ScrollTop > $('.creating').offset().top - wHeight - 50){
                 $('.creating').css({
                     'animation': 'howRight 1.1s ease-in-out forwards'
                 });
@@ -103,7 +103,7 @@ $(document).ready(function () {
                     'animation' : 'elipse 0.8s ease-in-out 0.8s forwards'
                 });
             }
-            if(ScrollTop > $('.developing').offset().top - wHeight){
+            if(ScrollTop > $('.developing').offset().top - wHeight - 50){
                 $('.developing').css({
                     'animation': 'howLeft 1.1s ease-in-out forwards'
                 });
@@ -111,7 +111,7 @@ $(document).ready(function () {
                     'animation' : 'elipse 0.8s ease-in-out 0.8s forwards'
                 });
             }
-            if(ScrollTop > $('.finishing').offset().top - wHeight){
+            if(ScrollTop > $('.finishing').offset().top - wHeight - 50){
                 $('.finishing').css({
                     'animation': 'howRight 1.1s ease-in-out forwards'
                 });

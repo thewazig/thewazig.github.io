@@ -59,7 +59,7 @@ header
         overflow: hidden
 
         .header
-            +animation(headerDown 1.2s ease-in-out 0.5s forwards)
+            +animation(headerDown 1.2s ease-in-out 1s forwards)
             visibility: hidden
             position: absolute
             top: $headerSectionHeaderTop
@@ -80,10 +80,12 @@ header
                 color: $sndC
                 
             .headerIcons
+                visibility: hidden
                 display: table
                 clear: both
                 margin: 0 auto
                 height: $HeaderIconsOuterHeight
+                +animation(fadeIcons 1s ease-in-out 1.8s forwards)
                 
                 .twiter, .behance, .dribble, .github
                     //background: black
@@ -113,29 +115,23 @@ header
                 .twiter
                     background:
                         position: -3.3em 0
-                    +animation(fadeIcons 1s ease-in-out 1.2s)
                     &:hover
                         background:
                             position: 0 0
-                        +animation(fadeIcons 1s ease-in-out 1.2s)
                         
                 .behance
                     background:
                         position: -30.1em 0
-                    +animation(fadeIcons 1s ease-in-out 1.4s)
                     &:hover
                         background:
                             position: -26.7em 0
-                        +animation(fadeIcons 1s ease-in-out 1.4s)
                             
                 .github
                     background:
                         position: -23.5em 0
-                    +animation(fadeIcons 1s ease-in-out 1.8s)
                     &:hover
                         background:
                             position: -20em 0
-                        +animation(fadeIcons 1s ease-in-out 1.8s)
                         
             .headerContact
                 visibility: hidden

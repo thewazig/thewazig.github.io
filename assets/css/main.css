@@ -24,18 +24,20 @@
 
 @keyframes fadeIcons {
   0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+    filter: opacity(0);
   }
   50% {
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
@@ -43,6 +45,9 @@
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
+    opacity: 1;
+    filter: opacity(100);
+    visibility: visible;
   }
 }
 
@@ -347,11 +352,11 @@ header #headerSection {
 }
 
 header #headerSection .header {
-  -webkit-animation: headerDown 1.2s ease-in-out 0.5s forwards;
-  -moz-animation: headerDown 1.2s ease-in-out 0.5s forwards;
-  -ms-animation: headerDown 1.2s ease-in-out 0.5s forwards;
-  -o-animation: headerDown 1.2s ease-in-out 0.5s forwards;
-  animation: headerDown 1.2s ease-in-out 0.5s forwards;
+  -webkit-animation: headerDown 1.2s ease-in-out 1s forwards;
+  -moz-animation: headerDown 1.2s ease-in-out 1s forwards;
+  -ms-animation: headerDown 1.2s ease-in-out 1s forwards;
+  -o-animation: headerDown 1.2s ease-in-out 1s forwards;
+  animation: headerDown 1.2s ease-in-out 1s forwards;
   visibility: hidden;
   position: absolute;
   top: 50%;
@@ -381,10 +386,16 @@ header #headerSection .header p:nth-child(3) {
 }
 
 header #headerSection .header .headerIcons {
+  visibility: hidden;
   display: table;
   clear: both;
   margin: 0 auto;
   height: 3.5em;
+  -webkit-animation: fadeIcons 1s ease-in-out 1.8s forwards;
+  -moz-animation: fadeIcons 1s ease-in-out 1.8s forwards;
+  -ms-animation: fadeIcons 1s ease-in-out 1.8s forwards;
+  -o-animation: fadeIcons 1s ease-in-out 1.8s forwards;
+  animation: fadeIcons 1s ease-in-out 1.8s forwards;
 }
 
 header #headerSection .header .headerIcons .twiter, header #headerSection .header .headerIcons .behance, header #headerSection .header .headerIcons .dribble, header #headerSection .header .headerIcons .github {
@@ -423,65 +434,35 @@ header #headerSection .header .headerIcons .twiter:hover, header #headerSection 
   -ms-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 header #headerSection .header .headerIcons .twiter {
   background-position: -3.3em 0;
-  -webkit-animation: fadeIcons 1s ease-in-out 1.2s;
-  -moz-animation: fadeIcons 1s ease-in-out 1.2s;
-  -ms-animation: fadeIcons 1s ease-in-out 1.2s;
-  -o-animation: fadeIcons 1s ease-in-out 1.2s;
-  animation: fadeIcons 1s ease-in-out 1.2s;
 }
 
 header #headerSection .header .headerIcons .twiter:hover {
   background-position: 0 0;
-  -webkit-animation: fadeIcons 1s ease-in-out 1.2s;
-  -moz-animation: fadeIcons 1s ease-in-out 1.2s;
-  -ms-animation: fadeIcons 1s ease-in-out 1.2s;
-  -o-animation: fadeIcons 1s ease-in-out 1.2s;
-  animation: fadeIcons 1s ease-in-out 1.2s;
 }
 
 header #headerSection .header .headerIcons .behance {
   background-position: -30.1em 0;
-  -webkit-animation: fadeIcons 1s ease-in-out 1.4s;
-  -moz-animation: fadeIcons 1s ease-in-out 1.4s;
-  -ms-animation: fadeIcons 1s ease-in-out 1.4s;
-  -o-animation: fadeIcons 1s ease-in-out 1.4s;
-  animation: fadeIcons 1s ease-in-out 1.4s;
 }
 
 header #headerSection .header .headerIcons .behance:hover {
   background-position: -26.7em 0;
-  -webkit-animation: fadeIcons 1s ease-in-out 1.4s;
-  -moz-animation: fadeIcons 1s ease-in-out 1.4s;
-  -ms-animation: fadeIcons 1s ease-in-out 1.4s;
-  -o-animation: fadeIcons 1s ease-in-out 1.4s;
-  animation: fadeIcons 1s ease-in-out 1.4s;
 }
 
 header #headerSection .header .headerIcons .github {
   background-position: -23.5em 0;
-  -webkit-animation: fadeIcons 1s ease-in-out 1.8s;
-  -moz-animation: fadeIcons 1s ease-in-out 1.8s;
-  -ms-animation: fadeIcons 1s ease-in-out 1.8s;
-  -o-animation: fadeIcons 1s ease-in-out 1.8s;
-  animation: fadeIcons 1s ease-in-out 1.8s;
 }
 
 header #headerSection .header .headerIcons .github:hover {
   background-position: -20em 0;
-  -webkit-animation: fadeIcons 1s ease-in-out 1.8s;
-  -moz-animation: fadeIcons 1s ease-in-out 1.8s;
-  -ms-animation: fadeIcons 1s ease-in-out 1.8s;
-  -o-animation: fadeIcons 1s ease-in-out 1.8s;
-  animation: fadeIcons 1s ease-in-out 1.8s;
 }
 
 header #headerSection .header .headerContact {
@@ -644,19 +625,19 @@ header #headerSection .headerArrow a {
 }
 
 #aboutMe #servicesWrapper .articles .design .servImg {
-  background-position: -88.5em center;
+  background-position: -88.4em center;
 }
 
 #aboutMe #servicesWrapper .articles .developement .servImg {
-  background-position: -82.5em center;
+  background-position: -82em center;
 }
 
 #aboutMe #servicesWrapper .articles .social .servImg {
-  background-position: -101em center;
+  background-position: -100.7em center;
 }
 
 #aboutMe #servicesWrapper .articles .more .servImg {
-  background-position: -94.8em center;
+  background-position: -94.5em center;
 }
 
 #work {
