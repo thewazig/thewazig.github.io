@@ -2,6 +2,7 @@
     padding: 0
     margin: 0
     box-sizing: border-box
+    +transition(0.4s)
     &:focus
         outline: none
     h1
@@ -18,25 +19,3 @@ body
     font-size: 62.5%
 html
     font-size: 16px
-        
-.up
-    z-index: 0
-    position: fixed
-    bottom: 2em
-    right: 1em
-    display: none
-    a   
-        z-index: 0
-        text-decoration: none
-        padding: 0.5em
-        background: rgba(0,0,0,0.4)
-        color: white
-        +border-radius(20%)
-        +transition(0.5s)
-        font:
-            size: 1.4em
-        &:hover
-            +transition(0.2s)
-            background: rgba(0,0,0,0.9)
-
-    

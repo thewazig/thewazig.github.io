@@ -1,0 +1,458 @@
+header
+    z-index: 70
+    overflow: hidden
+    width: 100%
+    height: 100vh
+    background:
+        image: url('../img/backgroundSmart.jpg')
+        size: cover
+        position: center
+         
+       
+    .navTrigger
+        z-index: 99
+        text-align: center
+        top: 2em
+        right: 1em
+        position: fixed
+        a
+            text-decoration: none
+            color: white
+            +border-radius(15%)
+            +transition(0.4s)
+            background: $eithC
+            padding: 0.9em 0.5em 1em
+            font:
+                size: 1.6em
+            &:active
+                +transform(scale(0.8))      
+    
+    nav
+        z-index: 99
+        position: fixed
+        top: 0
+        left: -100vw
+        width: 100vw
+        height: 100vh
+        .centering
+            width: 50vw
+            height: 100vh
+            text-align: center
+            background: $eithC
+            .logo
+                h2
+                    color: $mainC
+                    padding: 0.9em 0
+                    font:
+                        size: 4em
+            .menu
+                a
+                    color: $sndC
+                    text-decoration: none
+                    padding: 1em
+                    display: block
+                    margin: 0.5em 0
+                    +transition(0.5s)
+                    font:
+                        size: 1.6em
+                    &:hover
+                        background: $mainC
+                    
+                
+    #headerSection
+        text-align: center
+        position: relative
+        z-index: 90
+        width: 100%
+        height: 100vh
+        background: rgba(0,0,0,0.5)
+        .header
+            position: absolute
+            top: 50%
+            left: 50%
+            +transform(translate(-50%, -50%))
+        h1
+            color: $sndC
+            font:
+                size: 5em
+            
+        p
+            margin-top: 2em
+            text-align: center
+            color: $sndC
+            
+        .headerContact
+            text-align: center
+            a
+                border: 0.1em solid $sndC
+                text-decoration: none
+                color: $sndC
+                padding: 0.5em 1em
+                font:
+                    size: 1.6em
+                +transition(0.4s)
+                &:hover
+                    +transition(0.1s)
+                    background: $eithC
+                    border: 0.1em solid $eithC
+                    
+                    
+#aboutMe
+    padding: 5em 2em
+    #aboutWrapper
+        .photo
+            margin: 2em auto
+            width: 20em
+            height: 20em
+            background: lightGrey
+            +border-radius(50%)
+            p
+        .about
+            margin-top: 4em
+            h2
+                padding: 0 0 0.5em
+                
+            p
+                text-indent: 2em
+                text-align: justify
+                
+    #servicesWrapper
+        padding: 5em 0
+        .articles
+            article
+                width: 100%
+                margin: 3em auto
+                .servImg
+                    width: 5.2em
+                    height: 5em
+                    margin: 0 auto
+                    float: none
+                .servArticle
+                    width: 100%
+                    h2
+                        text-align: center
+                        padding: 0.2em 0 0.1em
+                    p
+                        text-indent: 2em
+                        padding: 0 0 1em
+            .design
+                .servImg
+                    background:
+                        position: -80.8em 0
+            
+            .developement
+                .servImg
+                    background:
+                        position: -75.2em 0
+                        
+            .social
+                .servImg
+                    background:
+                        position: -92.1em 0
+                
+            .more
+                .servImg
+                    background:
+                        position: -86.5em 0
+    
+        
+#work
+    background: $mainC
+    width: 100%
+    background: $mainC
+    padding: 1em 0
+    .workBox
+        margin: 1em auto 2em
+        border: 0.1em solid $eithC
+        width: 25em
+        height: 25em
+    #work01, #work02, #work03, #work04
+        display: none
+
+#how
+    padding: 0 2em
+    position: relative
+    .title
+        text-align: center
+        padding: 0.6em 0 1em
+        .titleDownLine
+            position: absolute
+            left: 50%
+            +transform(translate(-50%))
+            width: 5em
+            height: 0.05em
+            background: $eithC
+    article
+        h2
+            padding: 0.5em 0 0.3em
+        p
+            text-indent: 2em
+        
+#contact
+    margin: 3em 0 0
+    padding: 3em 2em
+    background: $mainC
+    color: $sndC
+    h1
+        text-align: center
+        color: $sndC
+    #contactInfoWrapper
+        margin: 2em 0
+        text-align: center
+        
+        p
+            color: $sndC
+            padding: 0.5em 0 0
+        p:nth-child(2)
+            letter-spacing: 0.1em
+    #formWrapper
+        width: 23em
+        margin: 0 auto
+        #nome, #email, textarea
+            width: 100%
+            +transition(0.4s)
+            padding: 0 0.5em
+            color: $eithC
+            &:focus
+                +box-shadow(inset 0.01em 0.01em 0.8em $eithC)
+        #nome, #email
+            height: 2.5em
+        textarea
+            height: 8em
+        #buttonWrapper
+            width: 50%
+            margin: 2em auto 0
+            background: lightgrey
+        #button
+            background: $mainC
+            color: $eithC
+            border: 0.1em solid $eithC
+            width: 100%
+            height: 3em
+            +transition(0.4s)
+            &:hover
+                +transition(0.1s)
+                background: $eithC
+                color: $mainC
+                
+.iconsWrapperContact
+    display: table
+    clear: both
+    margin: 2em auto
+    width: 17em
+.iconsWrapperHeader
+    display: table
+    clear: both
+    margin: 1em auto 3em
+    width: 13em
+                
+.icons
+    float: left
+    width: 3.2em
+    height: 3em
+    margin: 0 0.5em
+    background:
+        image: url('../img/icons/spriteIcons.png')
+        size: cover
+    +transition(0.2s)
+    +transform(translateZ(0))
+    &:active
+        +transform(scale(0.8))
+    
+    a
+        padding: 0 1.5em 2em
+        cursor: pointer
+.twiter
+    background:
+        position: -3.2em 0
+    
+.face
+    background:
+        position: -9.9em 0
+
+.behance
+    background:
+        position: -30.1em 0
+        
+.github
+    background:
+        position: -23.5em 0
+
+footer
+    .lastContacts
+        padding: 0 2em
+        background: $mainC
+        .lastWrapper
+            h2
+                display: block
+                font:
+                    size: 1.8em
+            .skype
+                width: 23em
+                margin: 0 auto
+                h2
+                    padding: 0.5em 0 2em
+                .icons
+                    background:
+                        position: -33.5em 0
+            .whatsapp
+                width: 14em
+                margin: 0 auto
+                h2
+                    padding: 0.5em 0 0.8em
+                .icons
+                    background:
+                        position: -13.4em 0
+    p
+        text-align: center
+        color: $mainC
+        margin: 0 auto
+        padding: 3em 0
+
+.up
+    a
+        color: white
+
+@media screen and (min-width: 600px)
+    header
+        nav
+            .centering
+                width: 40vw
+                .logo
+                    h2
+                        padding: 0.9em 0
+                        font:
+                            size: 4em
+                .menu
+                    a
+                        padding: 1em
+                        margin: 0.5em 0
+                        font:
+                            size: 1.6em
+                    
+        #headerSection
+                .header
+                    width: 80%
+                h1
+                    color: $sndC
+                    margin-bottom: 0.5em
+
+                p
+                    margin-top: 2em
+                    text-align: center
+                    color: $sndC
+                    font:
+                        size: 2em
+                .headerContact
+                    a
+                        padding: 0.5em 1.5em
+                        font:
+                            size: 1.8em
+                    
+                        
+
+    #aboutMe
+        padding: 3em 5em
+        #aboutWrapper
+            .photo
+                margin: 2em auto
+                width: 22em
+                height: 22em
+                background: lightGrey
+                +border-radius(50%)
+
+           
+    #work
+        display: table
+        .workBox
+            float: left
+            margin: 1em 0 2em 3.4%
+            width: 45%
+        #work01, #work02
+            display: block
+
+    #how
+        padding: 0 5em
+        
+
+    #contact
+        margin: 5em 0 0
+        padding: 3em 2em
+        h1
+        #contactInfoWrapper
+            margin: 2.5em 0
+
+            p
+                font:
+                    size: 1.8em
+            p:nth-child(2)
+                letter-spacing: 0.2em
+
+        #formWrapper
+            width: 23em
+            #nome, #email
+                height: 2.8em
+            textarea
+                height: 14em
+            
+    .iconsWrapperHeader
+        display: table
+        clear: both
+        margin: 3em auto 5em
+        width: 13em
+        
+        
+
+.up
+    position: fixed
+    bottom: 2em
+    right: 1em
+    a
+        +opacity(0.3)
+        text-decoration: none
+        color: white
+        background: $mainC
+        padding: 1em 0.5em 
+        +border-radius(20%)
+        +transition(0.4s)
+        font:
+            size: 1.4em
+        &:hover
+            +opacity(1)
+        
+@media screen and (min-width: 700px)
+    #aboutMe
+        #servicesWrapper
+            .articles
+                margin: 3em auto
+                article
+                    width: 50em
+                    margin: 3em auto
+    #work
+        .workBox
+            width: 45%
+        #work01, #work02, #work03, #work04
+            display: block
+
+@media screen and (min-width: 800px)
+    #work
+        .workWrapper
+            margin: 0 auto
+            width: 76em
+        .workBox
+            width: 45%
+            max-width: 35.5em
+    #contact
+        #formWrapper
+            width: 30em
+            #nome, #email
+                height: 2.8em
+            textarea
+                height: 16em
+                
+@media screen and (min-width: 900px)
+    header
+        background:
+            image: url('../img/backgroundMedium.jpg')
+            size: cover
+            position: center

@@ -4,44 +4,46 @@
         display: table
         .photo
             float: right
-            width: $aboutPhotoWidth
-            padding: $aboutPhotoPadding
+            width: 50%
+            padding: 3em
             text-align: center
             
         article.about
             float: left
-            width: $aboutArticleWidth
-            padding: $aboutArticlePadding
+            width: 50%
+            padding: 1em 7em
             h2
                 text-align: center
-                padding: $aboutArticleH2Padding
+                padding: 0.5em 0
             p
                 text:
                     align: justify
-                    indent: $aboutArticlePTextIndent
+                    indent: 2em90%
                 padding: 0.5em 0
 
     #servicesWrapper
         position: relative
         display: table
-        width: $aboutServicesWidth
-        height: $aboutServicesHeight
-        margin: $aboutServicesMargin
+        width: 90%
+        height: 40em
+        margin: 0 auto
         .articles
             visibility: hidden
-            width: $aboutServicesArticlesWidth
+            width: 100%
             position: absolute
-            top: $aboutServicesArticlesTop
-            left: $aboutServicesArticlesLeft
-            +transform($aboutServicesArticlesTransform)
+            top: 50%
+            left: 50%
+            +transform(translate(-50%, -70%))
             article
-                float: left
-                width: $aboutServicesArticleWidth
-                padding: $aboutServicesArticlePadding
+                width: 65em
+                padding: 1em 3em
                 h2
-                    //margin-top: $aboutServicesArticleH2MarginTop
                 p
-                    text-indent: $aboutServicesArticlePTextIndent
+                    text-indent: 2em
+            .design, .social
+                float: left
+            .developement, .more
+                float: right
                     
             .design, .developement, .social, .more
                 .servImg
@@ -57,8 +59,8 @@
                         size: cover
                 .servArticle
                     //background: grey
-                    width: 55em
-                    max-width: 55em
+                    width: 50em
+                    max-width: 50em
                     float: left
             .design
                 .servImg
@@ -79,4 +81,3 @@
                 .servImg
                     background:
                         position: -94.5em center
-            
