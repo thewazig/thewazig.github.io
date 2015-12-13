@@ -10,38 +10,43 @@
             top: 0
             left: 0
             width: 100%
-            height: 6em
-            background: #000
+            height: 4em
+            background: $brown
             display: table
             p
                 float: right
-                padding: 1.3em 0.8em
                 color: $lightBlue
+                padding: 0 0.6em
                 cursor: pointer
-                background: $brown
-
+                font:
+                    size: 3.5em
+                    
         nav
+            z-index: 99
             position: fixed
             top: 0
-            left: 0
-            z-index: 99
-            width: 60vw
+            left: -100vw
+            width: 100%
             height: 100vh
-            background: $brown
-            .logo
-                display: block
-                width: 100%
-                text-align: center
-                padding: 2em 0
-                font:
-                    size: 2em
-            a
-                color: $lightBlue
-                display: block
-                width: 100%
-                text-align: center
-                font-size: 1.6em
-                padding: 0.5em 0
-                &:hover
-                    background: rgba(0,0,0,0.5) 
+            background: rgba(0,0,0,0.7)
+            #navWrapper
+                width: 60vw
+                height: 100vh
+                background: $brown
+                .logo
+                    display: block
+                    width: 100%
+                    text-align: center
+                    padding: 2em 0
+                    font:
+                        size: 2em
+                a
+                    color: $lightBlue
+                    display: block
+                    width: 100%
+                    text-align: center
+                    font-size: 1.6em
+                    padding: 0.5em 0
+                    &:hover
+                        background: rgba(0,0,0,0.5) 
 

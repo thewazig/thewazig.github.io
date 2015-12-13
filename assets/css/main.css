@@ -45,34 +45,39 @@ p, a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6em;
-    background: #000;
+    height: 4em;
+    background: #7d6351;
     display: table;
   }
   header .navTrigger p {
     float: right;
-    padding: 1.3em 0.8em;
     color: #d2dee4;
+    padding: 0 0.6em;
     cursor: pointer;
-    background: #7d6351;
+    font-size: 3.5em;
   }
   header nav {
+    z-index: 99;
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 99;
+    left: -100vw;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  header nav #navWrapper {
     width: 60vw;
     height: 100vh;
     background: #7d6351;
   }
-  header nav .logo {
+  header nav #navWrapper .logo {
     display: block;
     width: 100%;
     text-align: center;
     padding: 2em 0;
     font-size: 2em;
   }
-  header nav a {
+  header nav #navWrapper a {
     color: #d2dee4;
     display: block;
     width: 100%;
@@ -80,7 +85,7 @@ p, a {
     font-size: 1.6em;
     padding: 0.5em 0;
   }
-  header nav a:hover {
+  header nav #navWrapper a:hover {
     background: rgba(0, 0, 0, 0.5);
   }
 }
