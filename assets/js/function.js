@@ -1,28 +1,23 @@
 $(document).ready(function() {
+    
     //slideMobile
     $(function() {
+        var menuIn = {'transform': 'translate(0,0)', 'transition': '0.4s'},
+            menuOut = {'transform': 'translate(-100vw, 0)', 'transition': '0.4s'}
         //MenuIn
         $('.navTrigger p').on('click tap', function(){
-            $('nav').css({
-                'transform': 'translate(0, 0)',
-                'transition': '0.4s'
-            });
+            $('nav').css(menuIn);
         })
-        $('html, body').on('swiperight', function(){
-            alert('hi');
+        $(document).on("swiperight",function(){
+            $('nav').css(menuIn);
         })
+        
         //MenuOut
         $('nav').on('click tap', function(){
-            $('nav').css({
-                'transform': 'translate(-100vw, 0)',
-                'transition': '0.4s'
-            });
+            $('nav').css(menuOut);
         })
-        $('html, body').on('swipeleft', function(){
-            $('nav').css({
-                'transform': 'translate(-100vw, 0)',
-                'transition': '0.4s'
-            });
+        $(document).on('swipeleft', function(){
+            $(nav).css(menuOut);
         })
     })
 });
