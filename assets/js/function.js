@@ -16,8 +16,8 @@ $(document).ready(function() {
         $('nav').on('click tap', function(){
             $('nav').css(menuOut);
         })
-        $(document).on('swipeleft', function(){
-            $(nav).css(menuOut);
+        $(document).on("swipeleft",function(){
+            $('nav').css(menuOut);
         })
     })
 });
