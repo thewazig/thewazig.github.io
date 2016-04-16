@@ -1,0 +1,123 @@
+.homeWrap
+  header
+    width: 135px
+    background: white
+    padding-top: 30px
+
+    .headerPosition
+      width: 135px
+      position: fixed
+      top: 30px
+      left: 0
+      bottom: 30px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    .logo
+      font:
+        size: 60px
+      text-align: center
+      min-width: 100px
+
+    .mainNav
+      ul
+        margin-top: 20px
+        padding: 0 20px 0 0
+        text-align: right
+        li
+          margin-bottom: 10px
+          &:last-child
+            margin-bottom: 0
+
+    .emailLink
+      display: block
+      text-align: right
+      padding-right: 20px
+
+    .mobileNavToggle
+      display: none
+      width: 50px
+      height: 50px
+      cursor: pointer
+      margin-right: 20px
+      align-items: center
+
+      span,
+      span:before,
+      span:after
+        content: ""
+        display: block
+        background: black
+        width: 45px
+        height: 2px
+        margin: 0 auto
+        position: relative
+        transition: all .3s ease-in-out
+
+      span::before
+        top: -17px
+      span::after
+        top: 15px
+
+      &.isOpen span
+        background: transparent
+
+      &.isOpen span:before,
+      &.isOpen span:after
+        transform-origin: center
+        transform: rotate(45deg)
+        top: 0
+
+      &.isOpen span:after
+        transform: rotate(-45deg)
+
+  .mobileNav
+    display: none
+    position: absolute
+    width: 100%
+    background: white
+    padding: 40px 0 20px
+    text-align: center
+    transform: translateY(-100%)
+    transition: all .3s ease-in-out
+
+    ul
+      margin: 0
+      padding: 0
+
+      li
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 0
+
+
+
+@media (max-width: 775px)
+  .homeWrap
+    header
+      width: auto
+      padding-top: 20px
+
+      .headerPosition
+        width: auto
+        position: relative
+        top: auto
+        bottom: auto
+        left: auto
+        flex-direction: row
+        align-items: center
+
+        .logo
+          font:
+            size: 45px
+
+        .mainNav, .emailLink
+          display: none
+
+        .mobileNavToggle
+          display: flex
+
+    .mobileNav.isOpen
+      display: block
+      transform: translateY(0)

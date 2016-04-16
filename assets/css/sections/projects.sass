@@ -1,0 +1,42 @@
+section#projects
+  .article-wrap
+    clear: both
+    overflow: auto
+    margin: -50px 0
+
+
+    .article-thumb
+      display: block
+      background:
+        size: cover
+        position: center
+      width: 33.33%
+      float: left
+      position: relative
+      overflow: hidden
+
+      &:after
+        content: ""
+        display: block
+        padding-top: 100%
+
+      .article-meta
+        position: absolute
+        background: fade-out(black, 0.4)
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        color: white
+        padding: 10px
+        opacity: 0
+        transform: translate(0%, 100%) scale(0.5)
+        transition: all 0.3s ease-in-out
+
+    .article-thumb:hover .article-meta
+      opacity:1
+      transform: translate(0%, 0%) scale(1)
+
+@media(max-width: 640px)
+  .desc-project
+    margin-bottom: 100px

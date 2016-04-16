@@ -1,30 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
     <title>Washington Ferreira</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My personal portifolio">
-    <meta name="keywords" content="portifolio, washington, ferreira, lalala">
     <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="utf-8">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-76522210-1', 'auto');
+      ga('send', 'pageview');
+      
+      
+    </script>
   </head>
   <body>
-    <header>
-      <div class="navTrigger">
-        <p>≡</p>
+    <div class="homeWrap">
+      <div class="mobileNav">
+              <ul>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#aboutMe">Quem sou</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
       </div>
-      <nav>
-        <div id="navWrapper">
-          <div class="logo">
-            <h2>{ wf }</h2>
-          </div>
-          <menu><a href="#aboutMe">Quem sou?</a><a href="#work">Projetos</a><a href="#services">Serviços</a><a href="#contact">Contato</a></menu>
-          <div class="social"></div>
+      <header>
+        <div class="headerPosition">
+          <h1 class="logo"> <a href="#about">wf</a></h1>
+          <nav class="mainNav">
+                  <ul>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#aboutMe">Quem sou</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                  </ul>
+          </nav><a href="mailto:thewazig.wf@gmail.com" target="_blank" class="emailLink">Email me</a>
+          <div class="mobileNavToggle"><span></span></div>
         </div>
-      </nav>
-    </header>
-    <script src="assets/js/jQuery-v1.11.3.js"></script>
-    <script src="assets/js/jQuery-Mobile-1.4.5.js"></script>
-    <script src="assets/js/function.js"></script>
+      </header>
+      <div class="homeSections">
+        <section id="about">
+          <div class="flex flexCenter">
+            <div class="col-1 pushRight">
+              <H2>Washington Ferreira</H2>
+              <p class="lead">Web Designer</p>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="flex flexCenter">
+            <div class="col-50 flex flexCenter">
+              <div class="col-1">
+                <div class="desc-project">
+                  <p class="sub">Projetos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-50 orderFirst">
+              <div class="article-wrap"><a href="" style="background-image: url(http://fillmurray.com/230/500)" class="article-thumb">
+                          <div class="article-meta">
+                            <div class="name">article name</div>
+                            <div class="date">Nov 16, 1990</div>
+                          </div></a><a href="" style="background-image: url(http://fillmurray.com/230/500)" class="article-thumb">
+                          <div class="article-meta">
+                            <div class="name">article name</div>
+                            <div class="date">Nov 16, 1990</div>
+                          </div></a><a href="" style="background-image: url(http://fillmurray.com/230/500)" class="article-thumb">
+                          <div class="article-meta">
+                            <div class="name">article name</div>
+                            <div class="date">Nov 16, 1990</div>
+                          </div></a><a href="" style="background-image: url(http://fillmurray.com/230/500)" class="article-thumb">
+                          <div class="article-meta">
+                            <div class="name">article name</div>
+                            <div class="date">Nov 16, 1990</div>
+                          </div></a><a href="" style="background-image: url(http://fillmurray.com/230/500)" class="article-thumb">
+                          <div class="article-meta">
+                            <div class="name">article name</div>
+                            <div class="date">Nov 16, 1990</div>
+                          </div></a><a href="" style="background-image: url(http://fillmurray.com/230/500)" class="article-thumb">
+                          <div class="article-meta">
+                            <div class="name">article name</div>
+                            <div class="date">Nov 16, 1990</div>
+                          </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="aboutMe">
+          <div class="flex flexCenter">
+            <div class="col-1">
+              <p class="sub">Quem Sou</p>
+            </div>
+            <div class="col-1">
+              <p class="indent">Meu primeiro contato com web design foi durante meu último ano de faculdade, onde ao final da matéria foi me pedido que criasse um website em Html e Css. Foi certamente uma experiência única e desde então descobri uma nova paixão.</p>
+              <p class="indent">Após um tempo, percebi que desenvolver um website envolvia muito mais do que apenas digitar códigos. Design, marketing, SEO, planejamento e como tudo isso s relaciona, foi em que eu me aperfeiçoei para proporcionar aos usuários de meus sites, a mesma experiência única que eu tive quando conheci o mundo do web Design.</p>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="flex flexCenter">
+            <div class="col-1">
+              <p class="contacT">Compartilhe suas ideias</p>
+              <p class="email">thewazig.wf@hotmail.com</p>
+              <p class="cel">cel: 9-6364-2358</p>
+            </div>
+            <div class="col-1">
+              <form id="contact-form" action="" method="post">
+                <input type="text" id="first-name" placeholder="Nome">
+                <input type="text" id="e-mail" placeholder="E-mail">
+                <input type="text" id="subject" placeholder="Assunto">
+                <textarea id="message" placeholder="Sua mensagem"></textarea>
+                <input type="submit" id="sending" value="Enviar">
+              </form>
+            </div>
+          </div>
+          <div class="flex flexCenter">
+            <div class="col-2">
+              <p>Copyright  ©  2016. Todos os direitos reservados ao criador deste site</p>
+            </div>
+          </div>
+        </section>
+        <!--include includes/columns.jade-->
+      </div>
+    </div>
   </body>
 </html>

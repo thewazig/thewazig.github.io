@@ -1,0 +1,19 @@
+mixin navContent()
+  ul
+    li: a(href="#projects") Projetos
+    li: a(href="#aboutMe") Quem sou
+    li: a(href="#contact") Contato
+
+.mobileNav
+  +navContent()
+header
+  .headerPosition
+    h1.logo  
+      a(href="#about") wf
+
+    nav.mainNav
+      +navContent()
+        
+    a(href="mailto:thewazig.wf@gmail.com", target="_blank").emailLink Email me
+    
+    .mobileNavToggle: span
